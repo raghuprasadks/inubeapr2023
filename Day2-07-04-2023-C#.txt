@@ -20,3 +20,16 @@ http://www.kaushalya.tech/
 2. Create a new object with aadhar number as a parameter
 3. Generate random account number instead of hardcoding the value
 
+
+Interface and implemenation
+
+
+IBank
+
+CalculateSimpleInterest(p,t)
+
+SBIBank
+KarnatakaBank
+
+
+

@@ -33,9 +33,11 @@ namespace csharpbasics
 
     
             AccountTest.TestAccount();
-    **/
+    
 
             InheritanceDemo_7.TestInheritance();
+    **/
+            InterfaceDemo_8.TestInterface();
 
             Console.ReadKey();
 
