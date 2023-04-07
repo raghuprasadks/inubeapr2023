@@ -12,6 +12,7 @@ namespace csharpbasics
         string name;
         string email;
         int balance;
+        long aadhar;
         /**
          * Constructor
          * */
@@ -21,6 +22,15 @@ namespace csharpbasics
             this.name = name;
             this.email = email;
             this.balance = balance;
+        }
+
+        internal Account_6(int actnum, string name, string email, int balance,long aadhar)
+        {
+            this.actnum = actnum;
+            this.name = name;
+            this.email = email;
+            this.balance = balance;
+            this.aadhar = aadhar;
         }
 
         internal int Deposit(int actnum, int amttodeposit)
@@ -67,6 +77,19 @@ namespace csharpbasics
 
             Random rnd = new Random();
             int actnum2 = rnd.Next();
+
+            Console.WriteLine("Constructor with aadhar ");
+
+            Account_6 act2 = new Account_6(actnum2, "rajani", "rajani@gmail.com", 0,9999999999);
+            bal = act2.Deposit(actnum2, 20000);
+            Console.WriteLine("Balance after deposit of 20 K " + bal);
+
+            bal = act2.Withdraw(actnum2, 5000);
+            Console.WriteLine("Balance after withdraw of 5 K " + bal);
+            actinfo = act2.ActInfo();
+            Console.WriteLine("Account info " + actinfo);
+
+
         }
 
     }
