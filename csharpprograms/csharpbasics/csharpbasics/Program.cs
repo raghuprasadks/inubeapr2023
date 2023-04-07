@@ -36,8 +36,10 @@ namespace csharpbasics
     
 
             InheritanceDemo_7.TestInheritance();
-    **/
+    
             InterfaceDemo_8.TestInterface();
+    **/
+            CollectionsDemo_9.NonGenericCollections();
 
             Console.ReadKey();
 

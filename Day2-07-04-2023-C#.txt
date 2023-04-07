@@ -31,5 +31,7 @@ CalculateSimpleInterest(p,t)
 SBIBank
 KarnatakaBank
 
+Collections
+Generics
 
 

@@ -45,6 +45,4 @@ namespace csharpbasics
             Console.WriteLine("KarnatakaBank : Simple Interest " + si);
         }
     }
-
-
 }
