@@ -47,6 +47,7 @@
     <Compile Include="ArrayDemo_4.cs" />
     <Compile Include="Array_LINQ_5.cs" />
     <Compile Include="Calculator_1.cs" />
+    <Compile Include="InheritanceDemo_7.cs" />
     <Compile Include="Loops_3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

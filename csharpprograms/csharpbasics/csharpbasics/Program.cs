@@ -31,8 +31,11 @@ namespace csharpbasics
      
             Array_LINQ_5.ArrayLinq();
 
-    **/
+    
             AccountTest.TestAccount();
+    **/
+
+            InheritanceDemo_7.TestInheritance();
 
             Console.ReadKey();
 
