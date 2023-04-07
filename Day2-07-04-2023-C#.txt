@@ -76,6 +76,31 @@ customer - code,name,email,mobile,location
 
 
 
+1. Create IPL Class 
+a. having following 
+attributes
+playercode,playername(string),team(string),season,matches,runs,wickets
+b. Constructor by passing above attributes
+c. info method to display information about the 
+attributes.
+
+2. Create IPLTest class
+a. with TestIPL Static method
+b. Create IPL object for 6 players for different seasons
+c. Add these objects to IPLList which is a generic
+list of IPL
+d. Display players info in IPLList
+e. Display total runs scored by players for a specific team
+Enter team name
+d. Display total wickets taken by players for a specific team and specific season
+Enter teamm name
+Enter season
+e. Display orange cap (highest run getter) player for a specific season
+Enter a season
+f. Display purple cap player (higest wicket taker)for a specific season
+Enter a season
+
+
 
 
 
