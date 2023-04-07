@@ -40,8 +40,14 @@ namespace csharpbasics
             InterfaceDemo_8.TestInterface();
     
             CollectionsDemo_9.NonGenericCollections();
-    **/
+    
             CollectionsDemo_9.GenericCollections();
+
+    
+
+            EncapsulationDemo_10.DemoEncapsulation();
+    **/
+            CoronaTest.TestCorona();
 
             Console.ReadKey();
 

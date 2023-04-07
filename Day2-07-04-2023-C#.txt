@@ -53,6 +53,29 @@ e. Display sum of totalcases
 d. Display average totalcases
 e. Display deathrate for each state
 i,e (deathcases/totalcases)*100
+30 minutes test.. Complete by 4.05 PM
+
+encapsulation
+Setter and getter
+
+
+private int amt;
+
+public set(int amttoset){
+this.amt = amttoset;
+}
+
+public int get(){
+return this.amt
+}
+
+property
+
+
+customer - code,name,email,mobile,location
+
+
+
 
 
 
