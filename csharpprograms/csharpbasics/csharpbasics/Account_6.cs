@@ -64,6 +64,9 @@ namespace csharpbasics
             Console.WriteLine("Balance after withdraw of 5 K " + bal);
             string actinfo = act1.ActInfo();
             Console.WriteLine("Account info " + actinfo);
+
+            Random rnd = new Random();
+            int actnum2 = rnd.Next();
         }
 
     }

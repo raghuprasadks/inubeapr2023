@@ -11,3 +11,12 @@ properties
 Inheritance
 ,polymorphism,abstraction
 encapsulation
+
+
+http://www.kaushalya.tech/
+
+
+1. Add another constructor by additionally passing aadhar
+2. Create a new object with aadhar number as a parameter
+3. Generate random account number instead of hardcoding the value
+
