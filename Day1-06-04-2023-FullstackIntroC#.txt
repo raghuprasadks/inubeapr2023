@@ -1,0 +1,101 @@
+1.Introduction to fullstack web application development
+2. Software Development Life Cycle (SDLC)
+
+Waterfall model
+
+SAD - Shiromani Akali Dal
+TMC - Trinamool Congress
+
+S - System Engineering (Requirement Gathering)
+A - Analysis
+D - Design
+C - Coding
+T - Testing
+M - Maintenance
+
+Agile
+Scrum
+
+
+
+IDE - Visual Studio
+
+https://www.tutorialsteacher.com/
+
+3. C# - basic programming
+
+static,object
+non-static
+userinputs
+
+simpleInterest
+WriteLine
+ReadLine
+
+Data types
+
+Loops
+while,for loop, do while
+
+DemoForLoop()
+print 5's table in reverse order
+50,45,40...5
+DemoDoWhileLoop()
+10,20,...100
+PrintTable(int table)
+4 X 1 = 4
+4 X 2 =8
+4 X 10 = 40
+PrintTableReverse(int table)
+5 X 10 = 50
+5 X 9 =45
+operators
+
+conditional statements
+
+if else
+
+eShoppe
+
+Following advertisement is circulated in news paper
+
+Get great discount...
+purchase amt <=10000 discountrate = 10%
+purchase amt >10000 <=20000 discountrate = 20%
+purchase amt >20000  discountrate = 35%
+Write a eShoppe program
+Inform user to enter the purchase amount
+GenerateBill (int purchaseamt)
+print the netamount and discount amount
+Sample calculation
+purchase_amt = 10000
+dis_rate=10%
+discount = purchase_amt*dis_rate = 1000
+netamout = purchase_amt-discount =10000-1000=9000
+
+
+array
+
+iplruns={20,13,44,78,23,18}
+
+1. Display total runs
+2. Display runs greater than 20
+3. Display odd runs
+4. Display maximum run
+5. Create a new array of evenruns and add all even runs
+LINQ methods
+Partial class
+static
+
+
+
+
+
+
+
+
+
+
+
+
+arrays
