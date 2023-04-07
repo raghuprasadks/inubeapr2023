@@ -35,3 +35,25 @@ Collections
 Generics
 
 
+1. Create Corona Class 
+a. having following 
+attributes
+statecode,statename(string),activecases,recoveredcases,deathcases,totalcases
+b. Constructor by passing above attributes
+c. info method to display information about the 
+attributes.
+
+2. Create CoronaTest class
+a. with TestCorona Static method
+b. Create Corona object for 5 southern states
+c. Add these objects to CoronaList which is a generic
+list of Corona
+d. Display items in CoronaList
+e. Display sum of totalcases
+d. Display average totalcases
+e. Display deathrate for each state
+i,e (deathcases/totalcases)*100
+
+
+
+
