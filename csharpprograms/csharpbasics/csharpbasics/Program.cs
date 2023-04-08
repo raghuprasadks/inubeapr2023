@@ -46,8 +46,11 @@ namespace csharpbasics
     
 
             EncapsulationDemo_10.DemoEncapsulation();
-    **/
+    
             CoronaTest.TestCorona();
+    **/
+            DelegateDemo_11.DemoDelegate();
+
 
             Console.ReadKey();
 

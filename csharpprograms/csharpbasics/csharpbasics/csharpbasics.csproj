@@ -49,6 +49,7 @@
     <Compile Include="Calculator_1.cs" />
     <Compile Include="CollectionsDemo_9.cs" />
     <Compile Include="CoronaTest.cs" />
+    <Compile Include="DelegateDemo_11.cs" />
     <Compile Include="EncapsulationDemo_10.cs" />
     <Compile Include="InheritanceDemo_7.cs" />
     <Compile Include="InterfaceDemo_8.cs" />

@@ -1,0 +1,18 @@
+Agenda
+1. Implicitly typed variables - var
+2. Value and Reference Types - done
+3. Delegates
+4. Events
+5. Exception handling
+6. File management
+Recap:
+
+Inheritance,polymorphism,abstraction
+Encapsulation
+Collections
+Generic,Non-Generic
+ArrayList
+List
+
+
+
