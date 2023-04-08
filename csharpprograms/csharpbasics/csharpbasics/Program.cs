@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using extendionMethods;
 
 namespace csharpbasics
 {
@@ -50,8 +51,12 @@ namespace csharpbasics
             CoronaTest.TestCorona();
     
             DelegateDemo_11.DemoDelegate();
-    **/
+    
             FunctionDelegateDemo_12.FunctionDelegateDemo();
+    **/
+            int i = 200;
+            bool IsGreater = i.IsGreaterThan(100);
+            Console.WriteLine("Extension method : IsGreaterThan " + IsGreater);
 
 
             Console.ReadKey();
