@@ -24,6 +24,10 @@ namespace csharpbasics
 
             demoDelegate("hi from lambda");
 
+            C cObj = new C();
+
+            demoDelegate = cObj.MethodC;
+            demoDelegate("With delegate ::");
 
 
         }
@@ -42,6 +46,14 @@ namespace csharpbasics
         internal static void MethodB(string msg)
         {
             Console.WriteLine("Class B:Method B :: " + msg);
+        }
+    }
+
+    class C
+    {
+        internal void MethodC(string msg)
+        {
+            Console.WriteLine("Class C:Method C :: " + msg);
         }
     }
 }
