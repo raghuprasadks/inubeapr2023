@@ -3,9 +3,9 @@ Agenda
 2. Value and Reference Types - done
 3. Delegates
 4. Extension method
-5. Events
-6. Exception handling
-7. File management
+5. Exception handling
+6. File management
+7. Events
 Recap:
 
 Inheritance,polymorphism,abstraction

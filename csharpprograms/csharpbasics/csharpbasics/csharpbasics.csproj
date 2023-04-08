@@ -51,6 +51,7 @@
     <Compile Include="CoronaTest.cs" />
     <Compile Include="DelegateDemo_11.cs" />
     <Compile Include="EncapsulationDemo_10.cs" />
+    <Compile Include="ExceptionHandling_13.cs" />
     <Compile Include="FunctionDelegateDemo_12.cs" />
     <Compile Include="InheritanceDemo_7.cs" />
     <Compile Include="InterfaceDemo_8.cs" />

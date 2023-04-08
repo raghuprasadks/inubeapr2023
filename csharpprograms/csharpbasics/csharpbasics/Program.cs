@@ -53,11 +53,12 @@ namespace csharpbasics
             DelegateDemo_11.DemoDelegate();
     
             FunctionDelegateDemo_12.FunctionDelegateDemo();
-    **/
+    
             int i = 200;
             bool IsGreater = i.IsGreaterThan(100);
             Console.WriteLine("Extension method : IsGreaterThan " + IsGreater);
-
+    **/
+            ExceptionHandling_13.TestCustomException();
 
             Console.ReadKey();
 
