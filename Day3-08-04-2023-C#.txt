@@ -9,6 +9,20 @@ Agenda
 Recap:
 
 Inheritance,polymorphism,abstraction
+
+
+
+1.Write a predicate delegate
+to check whether a person is eligible 
+to vote or not
+
+input age
+boolean 
+
+a. Write IsEligibleToVote(int age)
+function
+b. Write anonymous function
+c. Write lambda expression
 Encapsulation
 Collections
 Generic,Non-Generic
