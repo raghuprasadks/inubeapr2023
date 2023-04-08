@@ -49,3 +49,62 @@ Write a delegate to execute above functions
 Generic delegate
 
 
+Assignment
+
+1. Create UniversalAccount class
+having following attributes
+actno,name,bank,branch,balance
+
+a. Create a constructor with above attributes
+b. Create Deposit(int actno,int amttodeposit)
+increase the balance by amttodeposit
+This should return the balance
+c. Create Withdraw(int actno,int amttowithdraw)
+decrease the balance by amttowithdraw
+throw Insufficient balance exception
+incase the amttowithdraw is greater than
+the balance
+This should return the balance
+
+2. Create UniversalBankTest class
+
+a. Create ManageAccount() method
+
+Dynamically create accounts by getting
+user inputs for the account details and number of
+account to create
+Add all accounts to AccountList class
+
+Ask the user for any other operation dynamically
+like Deposit,Withdraw.. Based on the user input
+perform those operations...
+
+Summary Program execution flow...
+
+1. Enter Operation - A for ADD New Account
+D for Deposit, W for Withdraw
+
+2. If the option is A..
+How many accounts do you want to ADD
+based on this ask the user to enter account
+details dynamically
+like Enter Account Number,Name,Bank,Branch ... etc
+
+3. If option is D - i,e Deposit
+ask the user Account Number and Amount to Deposit
+Get his/her account details from the 
+AccountList
+and perform Deposit and print the balance
+
+4. If option is W - i,e Withdraw
+ask the user Account Number and Amount to Withdraw
+Get his/her account details from the 
+AccountList
+and perform withdraw and print the balance
+
+
+
+
+
+
+
