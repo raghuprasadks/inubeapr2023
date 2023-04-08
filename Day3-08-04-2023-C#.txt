@@ -16,3 +16,19 @@ List
 
 
 
+a. Create DelegateAssignment Class
+with a static method
+ExectuteDelegate
+and write the logic of delegate execution
+in this
+
+b. Create a Calculator class
+having following methods
+
+internal static int Add(int n1,int n2)
+internal static int Subtract(int n1,int n2)
+internal static int Multiply(int n1,int n2)
+
+Write a delegate to execute above functions
+
+
