@@ -1,0 +1,143 @@
+Agenda:
+
+SQL
+Database - 
+RDBMS - Relational Database Management
+System
+Free / Licensed
+SQL - Structured Query Language
+MS-SQL Server
+My-SQL
+Server - MS SQL Server
+ and 
+client - SQL Server Management Studio
+
+connecting to server using the client
+
+step 1 - create a database
+ecommercedb
+step 2 - Data Model
+Entities - 
+Customer - Entity - table
+id - primary key - int - auto increment
+name - varchar(100)
+email - varchar (50)
+mobile - int
+address
+location
+zipcode
+
+
+w3schools sql
+https://www.w3schools.com/sql/
+
+Queries
+1. Display records of customers
+select * from customers
+2. Display customers of Germany
+SELECT * FROM Customers where country = 'Germany'
+3. Display customers of Berlin
+in Germany
+SELECT * FROM Customers where country = 'Germany' and City='Berlin'
+4. Display customers of Germany or France
+
+SELECT * FROM Customers where country = 'Germany' or country = 'France'
+
+SELECT * FROM Customers where country in('Germany','France')
+
+5. Display unique countries in customers
+table
+
+SELECT distinct(country) FROM Customers
+
+6. Display country/countries whose name starts
+with I
+SELECT * FROM Customers where country like 'I%'
+7. Display country name and total number
+of customers in that country
+
+Country Total numbers
+Germany 21
+France 18
+
+SELECT distinct(country),count(*) as totalcustomers FROM [Customers]
+group by country
+
+
+8. Order by
+SELECT distinct(country),count(*) as totalcustomers FROM [Customers]
+group by country
+order by totalcustomers desc
+
+9. Display total price of all
+products
+
+select sum(price) as totalprice from products
+10. Display a product name having maximum
+price/min/average
+SELECT productname,max(price) FROM [Products]
+
+SELECT productname,min(price) FROM [Products]
+SELECT productname,avg(price) FROM [Products]
+
+11. Display category wise/supplier wise sum of product price
+
+Category ID/supplierid, price
+
+SELECT supplierid,sum(price) FROM [Products]
+group by supplierid
+
+12.Display category wise/supplier wise sum of product price
+
+where sum(price) > 50 
+
+SELECT supplierid,sum(price) FROM [Products]
+group by supplierid
+having sum(price)>50
+
+13. Display supplier name and sum(price)
+
+
+SELECT suppliername,sum(price) FROM Products,Suppliers
+where products.supplierid = suppliers.supplierid 
+group by products.supplierid
+having sum(price)>50
+
+SELECT suppliername,sum(price) FROM Products
+inner join Suppliers
+on products.supplierid = suppliers.supplierid 
+group by products.supplierid
+having sum(price)>50
+
+
+
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
