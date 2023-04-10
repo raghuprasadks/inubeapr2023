@@ -172,6 +172,21 @@ recovered int
 death int
 20. Insert records for 5 southern states
 
+create coronadetails table
+detailid - int - primary key
+statecode - int -Foreign Key references corona(statecode)
+name - varchar(100)
+location - varchar(100)
+zipcode - int
+
+insert 2 records for each state
+
+
+
+
+
+
+
 
 
 
