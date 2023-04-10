@@ -184,6 +184,32 @@ insert 2 records for each state
 
 
 
+1. Write a query to display following information
+
+Employee Name (Last Name),Total Number of Orders
+in descending order of the total number of orders
+
+2. Write a query to display the product which 
+is sold the most (limit 1,descending order of netamount)
+
+Product Name,NetAmount
+
+3. Write a query to display the category of product
+which is mostly sought after (limit 1,descending order of netamount)
+
+Category Name,NetAmount
+4. Write a query to display customer who has placed 
+highest orders in terms of the total transaction
+
+Customer Name, Net Amount
+
+
+
+
+
+
+
+
 
 
 
