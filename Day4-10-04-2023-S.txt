@@ -148,6 +148,8 @@ orderdetails.productid = products.productid
 group by customername
 
 
+16. Write a query to display customer
+who has not purchased any product
 
 
 
