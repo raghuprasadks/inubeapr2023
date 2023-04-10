@@ -109,12 +109,30 @@ on products.supplierid = suppliers.supplierid
 group by products.supplierid
 having sum(price)>50
 
-
-
 SELECT column_name(s)
 FROM table1
 INNER JOIN table2
 ON table1.column_name = table2.column_name;
+
+14. Country Name,Total Number of Orders
+customers - id,country
+orders table - customerid
+
+Germany 18
+France 12
+
+select country,count(orders.orderid) as totalorders from
+customers,Orders
+where customers.customerid = orders.customerid
+group by country
+order by totalorders desc
+
+
+
+
+
+
+
 
 
 
