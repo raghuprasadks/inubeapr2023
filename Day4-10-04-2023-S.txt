@@ -153,6 +153,33 @@ who has not purchased any product (sub query)
 
 select customername from customers where customerid not in (select customerid from orders)
 
+https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/
+
+17. Database creation
+
+CREATE DATABASE databasename;
+
+18. Drop a database
+DROP DATABASE databasename;
+
+DDL
+19 . create corona table
+statecode int pk
+name varchar(100)
+total int
+active int
+recovered int
+death int
+20. Insert records for 5 southern states
+
+
+
+
+
+
+
+
+
 
 
 
