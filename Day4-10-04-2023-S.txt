@@ -127,6 +127,32 @@ where customers.customerid = orders.customerid
 group by country
 order by totalorders desc
 
+15. Write a query to display following information
+
+
+Customer Name, Total Number of Orders, Net Order Value
+
+step 1 -
+select * from customers,orders,orderdetails,products
+where customers.customerid = 90 and
+customers.customerid = orders.customerid and
+orders.orderid = orderdetails.orderid and
+orderdetails.productid = products.productid
+
+step 2 -
+select customername,count(orders.orderid) TotalNumberOfOrders,sum(products.price*orderdetails.quantity) as NetOrderValue from customers,orders,orderdetails,products
+where customers.customerid = 90 and
+customers.customerid = orders.customerid and
+orders.orderid = orderdetails.orderid and
+orderdetails.productid = products.productid
+group by customername
+
+
+
+
+
+
+
 
 
 
