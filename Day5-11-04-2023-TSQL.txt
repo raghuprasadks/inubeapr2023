@@ -111,3 +111,16 @@ city,total number of cases,pending cases and closed cases
 
 
 
+insert into users values('raghu',9845547471,'prasadraghuks@gmail.com','bengaluru',560077,'karnataka')
+insert into users values('seetharamaiah',9845547472,'seetha@gmail.com','chennai',360077,'tamilnadu')
+insert into users values('balaji',9845547473,'balaji@gmail.com','hyderabad',460077,'telangana')
+insert into users values('arun',9845547474,'arun@gmail.com','kochi',260077,'kerala')
+
+
+select 
+count(*) as totalcases,
+count(case when status=1 then 1 end) as pendingcase,
+count(case when status=2 then 1 end) as inprogress,
+count(case when status=3 then 1 end) as completed,
+
+
