@@ -8,16 +8,39 @@
 </head>
 <body>
 
+    <form action="success.html" method="post">
     <h1>Sign Up Form</h1>
 
     <label for="name">Name</label><br>
-    <input type="text" name="name" id="name"><br>
+    <input type="text" name="name1" id="name" required><br>
 
     <label for="email">Email</label><br>
     <input type="email" name="email" id="email"><br>
 
+    <label for="mobile">Mobile</label><br>
+    <input type="number" name="mobile" id="mobile"><br>
+
+    <label for="gender">Gender</label><br>
+    Male <input type="radio" name="sex" id="male">
+    Female <input type="radio" name="sex" id="female"><br>
+    <label for="location">Location</label><br>
+    <select name="location" id="location">
+        <option value="bng">Bengaluru</option>
+        <option value="chn">Chennai</option>
+   </select><br>
+   <label for="dob">Date Of Birth</label><br>
+
+   <input type="date" name="dob" id="dob"><br>
+
+   
+    
+    <br>
+
+
+
+
     <button>Sign Up</button>
 
-    
+</form>
 </body>
 </html>

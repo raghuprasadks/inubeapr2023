@@ -186,6 +186,12 @@ select * from helpdeskview
 Web Programming
 DOM -  Document Object Model
 
+file:///D:/kaushalya/consultancy/inube/2023/apr2023/webprogramming/success.html?name=&email=&mobile=&location=bng&dob=
+file:///D:/kaushalya/consultancy/inube/2023/apr2023/webprogramming/success.html?name1=&email=&mobile=&location=bng&dob=
+
+
+file:///D:/kaushalya/consultancy/inube/2023/apr2023/webprogramming/success.html?name1=ravi&email=ravi%40gmail.com&mobile=98353535&sex=on&location=bng&dob=2023-04-12
+
 
 
 
