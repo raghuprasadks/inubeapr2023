@@ -40,6 +40,15 @@ proddisplaybysupplier
 suppliername as parameter to
 the stored prodcedure
 
+create procedure proddisplaybysupplier(@suppliername as varchar(100))
+as
+begin
+select * from product where supplier = @suppliername
+end
+
+exec proddisplaybysupplier lenovo
+
+
 
 
 
