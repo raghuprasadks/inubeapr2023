@@ -124,3 +124,63 @@ count(case when status=2 then 1 end) as inprogress,
 count(case when status=3 then 1 end) as completed,
 
 
+
+
+create table users (userid int identity(1,1) primary key,name varchar(100),mobile bigint,email varchar(100),state varchar(100),location varchar(100),zipcode int)
+
+insert into users values('teju',9090909090,'teju@gmail.com','TN','chennai',600050)
+insert into users values('moni',8080808080,'moni@gmail.com','TN','salem',600760)
+insert into users values('laxmi',7070707070,'laxmi@gmail.com','KA','belgavi',608650)
+insert into users values('pooja',9870808080,'pooja@gmail.com','KA','davangere',560050)
+insert into users values('geetha',9870707070,'geetha@gmail.com','AP','cochin',608950)
+
+insert into helpdesk values(1,'2023-01-11','access not allowed',1,'internal repair')
+insert into helpdesk values(2,'2023-04-11','monitor not working',2,'internal repair')
+insert into helpdesk values(1,'2023-02-11','keyboard issue',2,'replace')
+insert into helpdesk values(2,'2023-01-01','access denied',3,'request raised')
+
+insert into helpdesk values(3,'2023-01-01','access denied',3,'request raised')
+insert into helpdesk values(4,'2022-12-05','server issue',1,'request raised')
+insert into helpdesk values(3,'2023-02-12','system update',2,'internal repair')
+insert into helpdesk values(4,'2023-01-19','appliction not supporting',1,'servicing')
+
+insert into helpdesk values(5,'2023-01-01','access denied',3,'request raised')
+insert into helpdesk values(5,'2022-09-05','server issue',1,'request raised')
+insert into helpdesk values(5,'2023-03-12','system update',2,'internal repair')
+insert into helpdesk values(5,'2023-02-19','appliction not supporting',1,'servicing')
+
+create procedure sp_statistics1(@fromdate as datetime,@todate as datetime)
+as
+begin
+select users.state,count(helpdesk.issue) as totalcase ,count(case when helpdesk.status = 1 then 'Pending' end) Pending,count(case when helpdesk.status = 2 then 'inprogress' end) Inprogress,count(case when helpdesk.status = 3 then 'closed' end) Closed from users,helpdesk
+where users.userid=helpdesk.userid and
+helpdesk.issuedate >=@fromdate and helpdesk.issuedate <=@todate
+group by users.state 
+end
+
+execute sp_statistics'2022-01-01','2023-04-11';
+
+
+
+CREATE TABLE helpdesk(
+    helpdeskid int IDENTITY(1,1) NOT NULL,
+    userid int ,
+    foreign key (userid) references users(userid)
+    issuedate datetime NOT NULL,
+    issue varchar (100) NOT NULL,
+    status int NOT NULL,
+    resolution varchar(100))
+
+
+
+create view helpdeskview
+as
+select users.location,count(helpdesk.issue) as totalcase ,count(case when helpdesk.status = 1 then 1 end) Pending ,count(case when helpdesk.status = 3 then 1 end) Closed
+from users,helpdesk 
+where helpdesk.userid = users.userid 
+group by users.location
+
+
+select * from helpdeskview
+
+
