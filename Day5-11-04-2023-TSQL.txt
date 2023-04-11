@@ -46,8 +46,15 @@ begin
 select * from product where supplier = @suppliername
 end
 
+
+
 exec proddisplaybysupplier lenovo
 
+
+
+proddisplaybysuppliernrange
+suppliername,minprice and maxprice as parameter to
+the stored prodcedure
 
 
 
