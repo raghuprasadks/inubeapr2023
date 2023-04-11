@@ -56,9 +56,58 @@ proddisplaybysuppliernrange
 suppliername,minprice and maxprice as parameter to
 the stored prodcedure
 
+Built-in functions
+
+1. trim/ltrim/rtrim
+select trim(name) from product
+select ltrim(name) from product
+
+2. len
+select len(name) from product
 
 
 
+create view prodview
+as
+select * from product
+
+1. create users table
+userid -int,pk,identity
+name - varchar(100)
+mobile - bigint
+email - varchar(100)
+location - varchar(100)
+zipcode - int
+state - varchar(100)
+insert atleast 5 users
+
+2. create helpdesk table
+
+helpdeskid - pk-int-identity
+userid - int,reference user(userid)
+issuedate - datetime
+issue - varchar(100)
+status - int  - 1-pending 2-inprogress 3 - closed
+resolution - varchar(100)
+
+insert atleast 12 records
+from 3 different states
+ensure to insert date 
+current date and past meaning
+
+3. create a sp_statistics stored 
+procedure by passing fromdate and todate as the parameter
+
+display following information in
+the stored procedure using two parameters
+
+state Name, Total cases, No of pending cases,No of in progresscases, No of closed cases
+
+
+4. create a view named helpdeskview
+to display following information
+
+city,total number of cases,pending cases and closed cases 
 
 
 
