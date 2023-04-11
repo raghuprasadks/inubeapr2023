@@ -36,6 +36,12 @@ end
 
 exec proddisplay
 
+proddisplaybysupplier
+suppliername as parameter to
+the stored prodcedure
+
+
+
 
 
 
