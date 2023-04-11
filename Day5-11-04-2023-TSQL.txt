@@ -183,4 +183,10 @@ group by users.location
 
 select * from helpdeskview
 
+Web Programming
+DOM -  Document Object Model
+
+
+
+
 
