@@ -1,0 +1,42 @@
+Agenda:
+1. SQL - UI
+2. T-SQL - view/procedure/function
+3. Web Programming - HTML/CSS
+
+CSS  - 
+
+Three ways of stlying
+inline
+internal
+external
+
+ALTER TABLE demoidentity DROP constraint PK_demoidentity
+ALTER TABLE demoidentity DROP COLUMN id
+ALTER TABLE demoidentity ADD id INT IDENTITY(1,1)
+
+https://www.sqlservertutorial.net/
+
+stored procedure
+step 1-
+create product table
+
+id - int -pk-identity
+name - varchar(100)
+desc - varchar(100)
+supplier - varchar(100)
+price - int
+step2 - insert few records
+
+step 3 -create a procedure
+create procedure proddisplay
+as 
+begin
+select * from product
+end
+
+exec proddisplay
+
+
+
+
+
