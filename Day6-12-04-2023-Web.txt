@@ -8,3 +8,10 @@ external
 
 padding margin border
 inline - block level
+
+Styling form elements
+
+https://www.w3schools.com/css/css_form.asp
+
+
+
