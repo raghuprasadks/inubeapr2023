@@ -5,3 +5,6 @@ CSS- Cascading Style Sheet
 inline
 internal
 external
+
+padding margin border
+inline - block level
