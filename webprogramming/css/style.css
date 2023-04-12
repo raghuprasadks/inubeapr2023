@@ -1,0 +1,9 @@
+body{
+    background-color: lightblue;
+    background-image: url("images/nature.jpg");
+}
+
+h1{
+    color: crimson;
+    font-size: 30px;
+}
