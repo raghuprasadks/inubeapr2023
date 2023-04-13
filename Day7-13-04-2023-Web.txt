@@ -1,4 +1,22 @@
 Agenda:
 Boostrap
 Java Script
+Front end
+V8 engine
+
+node.js - javascript server side
+run time environment
+
+building blocks
+data types
+operators
+loops
+conditional statements
+functions
+array
+Objects
+html,css,javascript
+
+
+
 
