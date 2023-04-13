@@ -1,2 +1,4 @@
 https://www.tutorialsteacher.com/
 https://learn.microsoft.com/en-us/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/introduction-and-overview
+
+https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples

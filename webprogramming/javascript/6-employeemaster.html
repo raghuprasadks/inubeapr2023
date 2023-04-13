@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Master</title>
+</head>
+<body>
+
+    <h1>Employee Master</h1>
+    <script>
+
+        console.log('employee master')
+        emplist = []
+        emp1 ={code:1,name:'ravi'}
+        emp2 = {code:2,name:'rekha'}
+        emp3 = {code:3,name:'suresh'}
+        emplist.push(emp1)
+        emplist.push(emp2)
+        emplist.push(emp3)
+
+        for(i=0;i<emplist.length;i++){
+
+            emp = emplist[i]
+            console.log('Code '+emp.code + ' Name : '+emp.name)
+
+        }
+        /**
+        emplist.pop()
+        console.log('after pop')
+        for(i=0;i<emplist.length;i++){
+
+            emp = emplist[i]
+            console.log('Code '+emp.code + ' Name : '+emp.name)
+
+        }
+        **/
+
+        emptosearch=2
+
+        console.log('search')
+        for(i=0;i<emplist.length;i++){
+
+            emp = emplist[i]
+            if(emp.code==emptosearch){
+
+           
+            console.log('Code '+emp.code + ' Name : '+emp.name)
+        }
+    }
+        newname = "rekha Ganeshan"
+
+        console.log("updation of name")
+
+        for(i=0;i<emplist.length;i++){
+
+            emp = emplist[i]
+            if(emp.code==emptosearch){
+          //  console.log('Code '+emp.code + ' Name : '+emp.name)
+          emp.name = newname
+        }}
+
+        console.log("After updation")
+
+        for(i=0;i<emplist.length;i++){
+
+            emp = emplist[i]
+            console.log('Code '+emp.code + ' Name : '+emp.name)
+
+        }
+
+    </script>    
+</body>
+</html>

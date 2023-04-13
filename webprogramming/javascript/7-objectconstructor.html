@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obect Constructor</title>
+</head>
+<body>
+
+    <h1>Object Constructor</h1>
+    <script>
+
+        /**
+         * 
+         * Object Constructor
+         * 
+         * */
+
+        function employee(code,name,dept,sal){
+            this.code = code;
+            this.name = name;
+            this.dept = dept;
+            this.sal = sal;
+            this.info = function() {
+                console.log("Code : "+this.code + "Name : "+this.name +" Department : "+this.dept +" Salary : "+this.sal)
+            };
+        }
+
+        emp1 = new employee(1,'ranga','IT',40000)
+        emp2 = new employee(2,'rohit','HR',30000)
+        emp3 = new employee(3,'samhita','Admin',35000)
+
+        emplist = []
+
+        emplist.push(emp1)
+        emplist.push(emp2)
+        emplist.push(emp3)
+
+        for (i=0;i<emplist.length;i++){
+            emp = emplist[i]
+            emp.info()
+            
+        }
+
+    </script>
+</body>
+</html>
