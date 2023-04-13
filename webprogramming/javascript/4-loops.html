@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and conditional statements</title>
+</head>
+<body>
+
+    <h1>Loops and conditional statements</h1>
+    <script>
+
+        console.log("printing 5's table using while loop")
+        start = 5
+        end = 50
+        while(start <=end){
+            console.log(start)
+           // start = start +5
+           start +=5
+        }
+
+        console.log("printing 5's table using for loop")
+
+        for (i=10;i<=100;i=i+10){
+            if (i==50)
+              //  break
+              continue
+            console.log(i)
+        }
+        
+        fruits = ['apple','banana','mango','guava']
+
+        console.log('for loop with array')
+
+        for(i=0;i<fruits.length;i++){
+            console.log(fruits[i])
+        }
+
+        console.log('for of with array')
+        for(let fruit of fruits){
+            console.log(fruit)
+        }
+
+        // var,const,let
+
+        age = 40
+
+        if(age>=18){
+            console.log('you are eligible to vote')
+        }else{
+            console.log('you are not eligible to vote')
+        }
+
+        //const pi=3.14
+        //pi=3.143
+
+
+    </script>
+</body>
+</html>
