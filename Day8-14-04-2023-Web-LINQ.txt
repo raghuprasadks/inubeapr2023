@@ -15,7 +15,20 @@ Object constructors
 
 CRUD
 AJAX
+ADO .NET
 C# - LINQ
+
+
+
+C#
+
+ADO .NET
+Entity Framework
+LINQ
+ASP .NET
+.NET Core
+.NET MVC
+.NET WebAPI
 
 
 <tr>
@@ -69,7 +82,7 @@ fetch('http://jsonplaceholder.typicode.com/users')
 todos
 
 
-
+https://www.completecsharptutorial.com/ado-net/first-ado-net-program-in-c.php
 
 
 
