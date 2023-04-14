@@ -75,13 +75,17 @@
 
         function  listEmployee(){
 
-            tbldata ="<tr><th>Code</th><th>Name</th><th>Department</th><th>Designation</th><th>Salary</th></tr>"
+            tbldata ="<tr><th>Code</th><th>Name</th><th>Department</th><th>Designation</th><th>Salary</th><th>Delete</th></tr>"
             for(i=0;i<employeelist.length;i++){
                 emp = employeelist[i]
-                tbldata = tbldata+"<tr><td>"+emp.code+"</td><td>"+emp.name+"</td><td>"+emp.dept+"</td><td>"+emp.desg+"</td><td>"+emp.sal+"</td></tr>"
+                tbldata = tbldata+"<tr><td>"+emp.code+"</td><td>"+emp.name+"</td><td>"+emp.dept+"</td><td>"+emp.desg+"</td><td>"+emp.sal+"</td><td><button onclick=deleteEmployee()>Delete</button></td></tr>"
             }
             document.getElementById("data").innerHTML=tbldata
 
+        }
+
+        function deleteEmployee(){
+            alert("delete employee")
         }
 
     </script>

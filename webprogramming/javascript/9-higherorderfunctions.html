@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Functions</title>
+</head>
+<body>
+    <h1>Higher Order Functions</h1>
+
+    <script>
+
+        
+
+        console.log("age above 18")
+        agearry=[10,45,18,20,45,56,12]
+        age18arry=[]
+        for (i=0;i<agearry.length;i++){
+            age18 = agearry[i]>=18
+            //console.log(age18)
+            if(age18){
+                console.log(agearry[i])
+                age18arry.push(agearry[i])
+            }
+        }
+
+        console.log("age equal to or greater than 18 ",age18arry)
+
+        console.log("higher order functions")
+
+        function above18(age){
+            return age>=18
+        }
+
+        age18filteredarr = agearry.filter(above18)
+        console.log(age18filteredarr)
+        console.log('lamdba filter')
+        age18filterlambda = agearry.filter((age)=>age>=18)
+        console.log('lamdba filter::age',age18filterlambda)
+        
+
+
+    </script>
+    
+</body>
+</html>

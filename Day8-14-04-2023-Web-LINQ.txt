@@ -18,5 +18,17 @@ AJAX
 C# - LINQ
 
 
+<tr>
+<td>1</td><td>Ravi</td><td>IT</td>
+<tr>
+<tr>
+<td>2</td><td>Ravi</td><td>IT</td>
+<tr>
+
+
+array higher order functions
+map,filter,reduce
+
+we need to pass function as a parameter to another function
 
 
