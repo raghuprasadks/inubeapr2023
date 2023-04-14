@@ -79,7 +79,8 @@
             for(i=0;i<employeelist.length;i++){
                 emp = employeelist[i]
                 code = emp.code
-                tbldata = tbldata+"<tr><td>"+emp.code+"</td><td>"+emp.name+"</td><td>"+emp.dept+"</td><td>"+emp.desg+"</td><td>"+emp.sal+"</td><td><button onclick=deleteEmployee(code)>Delete</button></td></tr>"
+                //tbldata = tbldata+"<tr><td>"+emp.code+"</td><td>"+emp.name+"</td><td>"+emp.dept+"</td><td>"+emp.desg+"</td><td>"+emp.sal+"</td><td><button onclick=deleteEmployee(code)>Delete</button></td></tr>"
+                tbldata = `${tbldata}<tr><td>${emp.code}</td><td>${emp.name}</td><td>${emp.dept}</td><td>${emp.desg}</td><td>${emp.sal}</td><td><button onclick=deleteEmployee(${code})>Delete</button></td></tr>`
             }
             document.getElementById("data").innerHTML=tbldata
 
