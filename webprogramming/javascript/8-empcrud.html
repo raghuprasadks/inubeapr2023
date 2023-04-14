@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Master</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+
+        th{
+            border: 1px solid green;
+            background-color:greenyellow;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Master</h1>
+    <label for="code">Code</label><br>
+    <input type="number" name="code" id="code" placeholder="Enter Employee Code"><br>
+    <label for="name">Name</label><br>
+    <input type="text" name="name" id="name" placeholder="Enter Employee Name"><br>
+    <label for="dept">Department</label><br>
+    <input type="text" name="dept" id="dept" placeholder="Enter Employee Department"><br>
+    <label for="desg">Designation</label><br>
+    <input type="text" name="desg" id="desg" placeholder="Enter Employee Designation"><br>
+    <label for="sal">Salary</label><br>
+    <input type="text" name="sal" id="sal" placeholder="Enter Employee Salary"><br>
+    <input type="button" value="Add Employee" onclick="addEmployee()">
+    <input type="button" value="List Employee" onclick="listEmployee()"><br>
+
+    <table id="data">
+        
+    </table>
+
+
+    <script>
+
+        var employeelist = []
+
+        var employee = function employee(code,name,dept,desg,sal){
+            this.code = code
+            this.name = name
+            this.dept = dept
+            this.sal = sal
+            this.desg = desg
+        }
+
+        function addEmployee(){
+           // alert ('add employee')
+           code = document.getElementById('code').value
+           name = document.getElementById('name').value
+           dept = document.getElementById('dept').value
+           desg = document.getElementById('desg').value
+           sal = document.getElementById('sal').value
+           emp = new employee(code,name,dept,desg,sal)
+           employeelist.push(emp)
+           console.log('length ## '+employeelist.length)
+           console.log(employeelist)  
+           clearInput()
+           
+        }
+
+        function clearInput(){
+            document.getElementById('code').value=''
+           document.getElementById('name').value=''
+           document.getElementById('dept').value=''
+           document.getElementById('desg').value=''
+           document.getElementById('sal').value=''
+            
+        }
+
+        function  listEmployee(){
+
+            tbldata ="<tr><th>Code</th><th>Name</th><th>Department</th><th>Designation</th><th>Salary</th></tr>"
+            for(i=0;i<employeelist.length;i++){
+                emp = employeelist[i]
+                tbldata = tbldata+"<tr><td>"+emp.code+"</td><td>"+emp.name+"</td><td>"+emp.dept+"</td><td>"+emp.desg+"</td><td>"+emp.sal+"</td></tr>"
+            }
+            document.getElementById("data").innerHTML=tbldata
+
+        }
+
+    </script>
+
+
+</body>
+</html>

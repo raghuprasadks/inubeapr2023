@@ -1,0 +1,22 @@
+Agenda:
+Java Script
+
+
+building blocks
+data types
+operators
+loops
+conditional statements
+functions
+array
+Objects
+DOM - Document Object Model
+Object constructors
+
+CRUD
+AJAX
+C# - LINQ
+
+
+
+
