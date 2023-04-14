@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX - Get </title>
+</head>
+<body onload="displayUsers()">
+
+    <h1>AJAX - Get - JSON Place Holder - Users</h1>
+<!--
+    <button onclick="displayUsers()">Display Users</button><br>
+-->
+    <table id="data"></table>
+    
+    <script>
+
+        function displayUsers(){
+            fetch('http://jsonplaceholder.typicode.com/users')
+            .then(response => response.json())
+          //  .then(json => console.log(json))
+          .then(json => showUsers(json))
+        }
+
+        function showUsers(users){
+
+            tbldata ="<tr><th>Id</th><th>Name</th><th>City</th><th>Phone</th><th>Company Name</th></tr>"
+            for(i=0;i<users.length;i++){
+                user = users[i]
+              //  code = emp.code
+                //tbldata = tbldata+"<tr><td>"+emp.code+"</td><td>"+emp.name+"</td><td>"+emp.dept+"</td><td>"+emp.desg+"</td><td>"+emp.sal+"</td><td><button onclick=deleteEmployee(code)>Delete</button></td></tr>"
+                tbldata = `${tbldata}<tr><td>${user.id}</td><td>${user.name}</td><td>${user.address.city}</td><td>${user.phone}</td><td>${user.company.name}</td></tr>`
+            }
+            document.getElementById("data").innerHTML=tbldata
+
+
+        }
+
+    </script>
+</body>
+</html>

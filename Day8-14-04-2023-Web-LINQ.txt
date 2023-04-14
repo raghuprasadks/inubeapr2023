@@ -31,4 +31,44 @@ map,filter,reduce
 
 we need to pass function as a parameter to another function
 
+``
+
+AJAX - Asynchronous Java Script And XML
+
+Calling backend api
+
+JSON - Java Script Object Notation
+java script object
+emp={
+code:1,
+name:"raghu"
+}
+
+JSON
+emp={
+"code":1,
+"name":"raghu"
+}
+
+Web Service
+input - processing - response
+weather report - API - Application Programming Interface - URL - 
+Uniform Resource Locator
+stock exchange 
+
+Aadhar
+
+http://jsonplaceholder.typicode.com/
+
+http://jsonplaceholder.typicode.com/users
+
+fetch('http://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+
+
+
+
+
 
