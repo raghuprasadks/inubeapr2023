@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,19 @@ namespace adonetwindows
         static void Main(string[] args)
         {
             Console.WriteLine("Ado.NET Demo");
+
+           // string ConString = @"Data Source=.\SQLEXPRESS;Initial Catalog=TestDB;Integrated Security=True";
+            String ConString = "data source=inubedb.cdtqd6jgia7i.ap-south-1.rds.amazonaws.com;initial catalog=TestDB;uid=admin;pwd=kaushalyaat2017;TrustServerCertificate=True";
+
+            SqlConnection con = new SqlConnection(ConString);
+            string querystring = "Select * from Student";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(querystring, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Console.WriteLine(reader[0].ToString() + " " + reader[1].ToString() + " " + reader[2].ToString());
+            }
             Console.ReadKey();
         }
     }
