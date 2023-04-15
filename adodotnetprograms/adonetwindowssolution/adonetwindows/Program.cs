@@ -17,10 +17,13 @@ namespace adonetwindows
             //  createDataBase();
             //createTable();
             //insertRecord();
-            insertRecordWithParameter();
+            // insertRecordWithParameter();
+           // insertRecordWithUserInput();
             Console.ReadKey();
         }
 
+        
+        
         static void readStudent()
         {
             String ConString = "data source=inubedb.cdtqd6jgia7i.ap-south-1.rds.amazonaws.com;initial catalog=TestDB;uid=admin;pwd=kaushalyaat2017;TrustServerCertificate=True";
@@ -157,5 +160,5 @@ namespace adonetwindows
             }
         }
     }
-    }
+}
 
