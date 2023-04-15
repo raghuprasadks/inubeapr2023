@@ -22,7 +22,9 @@ namespace adonetwindows
             // StoredProcedures.createStoredProcedure();
             // DataSetDemo.PopulateDataSet();
             // DataSetDemo.InsertToDataSet();
-            LINQDemo.QuerySyntax();
+            //  LINQDemo.QuerySyntax();
+            // LINQDemo.MethodSyntax();
+            LINQTOOBJECTDemo.LiQNTOOBKECTTest();
             Console.ReadKey();
         }
 
