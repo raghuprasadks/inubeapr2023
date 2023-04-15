@@ -18,7 +18,9 @@ namespace adonetwindows
             //createTable();
             //insertRecord();
             // insertRecordWithParameter();
-           // insertRecordWithUserInput();
+            // insertRecordWithUserInput();
+            // StoredProcedures.createStoredProcedure();
+            DataSetDemo.PopulateDataSet();
             Console.ReadKey();
         }
 

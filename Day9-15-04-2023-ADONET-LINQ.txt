@@ -34,3 +34,8 @@ string query = "INSERT INTO Products (Name, Price, Date) VALUES(@Name, @Price, @
 }
 
 
+create prodcedure <procedurename>
+as
+begin
+select * from products
+end
