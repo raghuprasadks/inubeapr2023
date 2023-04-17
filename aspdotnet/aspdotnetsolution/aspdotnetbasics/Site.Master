@@ -55,7 +55,8 @@
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                        <li><a runat="server" href="~/SignUp">SignUp</a></li>
                        <li><a runat="server" href="~/SimpleCalculator">Simple Calculator</a></li>
-                       
+                        <li><a runat="server" href="~/ProductViewForm">Product View Form</a></li>
+                      
 
                     </ul>
                 </div>
