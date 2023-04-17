@@ -1,74 +1,44 @@
-LINQ Revision
-Weekly Test
-ASP .NET
-
-1. Create a Book class
-having following properties.
-int ISBNNumber
-string Title
-string Author
-string Category
-int Price
-int Stock
-
-category could be fiction,drama,scientific
-
-2. Create BookManagement class
-
-Create a List of 3 books for each category
-i,e create object of Book and add them to List
-3. Write following queries using query syntax and method syntax
-a. display all the books in the library
-i,e print all the properties
-b. Display the book having maximum price
-c. Group the books by category and print the
-title,author and price along with category
-d. Display all the books written by  Chetan Bhagat
-e. Display books containing title India
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinqRev
+namespace adonetwindows
 {
-    class Book
-    {
-        public int ISBNNumber { get; set; }
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public string Category { get; set; }
-        public int Price { get; set; }
-        public int Stock { get; set; }
-
-    }
     class BookManagement
     {
-        static List<Book> book = new List<Book>();
-        internal static List<Book> getBookDetails() 
-        {
-            book.Add(new Book { ISBNNumber = 1, Title = "A Better World", Author = "Narayana Murthy", Category = "drama", Price = 1000, Stock = 10 });
-                book.Add(new Book { ISBNNumber = 1, Title = "A Revenue Stamp", Author = "Amrita Pritam", Category = "drama", Price = 1000, Stock = 10 });
-                book.Add(new Book { ISBNNumber = 1, Title = "Pinjar", Author = "Amrita Pritam", Category = "drama", Price = 2000, Stock = 8 });
-                book.Add(new Book { ISBNNumber = 1, Title = "A Tale of Two Cities", Author = "Charles Darwin", Category = "Fiction", Price = 3000, Stock = 5 });
-                book.Add(new Book { ISBNNumber = 1, Title = "Devdas", Author = "Chetan Baghat", Category = "Fiction", Price = 1000, Stock = 7 });
-                book.Add(new Book { ISBNNumber = 1, Title = "Crime and Punishment", Author = "Sarat Chandra Chaterjee", Category = "Fiction", Price = 2000, Stock = 6 });
-                book.Add(new Book { ISBNNumber = 1, Title = "Faust", Author = "Goethe", Category = "Scientific", Price = 4000, Stock = 4 });
-                book.Add(new Book { ISBNNumber = 1, Title = "India", Author = "Chetan Baghat", Category = "Scientific", Price = 2000, Stock = 10 });
-                book.Add(new Book { ISBNNumber = 1, Title = "Paradise Lost", Author = "John Miton", Category = "Scientific", Price = 3000, Stock = 9 });
 
-               
-            return book;
+        internal static List<Book> getBookDetails()
+        {
+            /**
+            Book book1 = new Book();
+            book1.ISBNNumber = 1;
+            book1.Title = "3 Idiots";
+            book1.Author = "Chetan Bhagat";
+            **/
+            // Book book2 = new Book { ISBNNumber = 1, Title = "A Better World", Author = "Narayana Murthy", Category = "drama", Price = 1000, Stock = 10 };
+            //  Book book3 = new Book(2,"test 1","Chethan Bhagat");
+            List<Book> bookList = new List<Book>();
+            bookList.Add(new Book { ISBNNumber = 1, Title = "A Better World", Author = "Narayana Murthy", Category = "drama", Price = 1000, Stock = 10 });
+            bookList.Add(new Book { ISBNNumber = 2, Title = "A Revenue Stamp", Author = "Amrita Pritam", Category = "drama", Price = 1000, Stock = 10 });
+            bookList.Add(new Book { ISBNNumber = 3, Title = "Pinjar", Author = "Amrita Pritam", Category = "drama", Price = 2000, Stock = 8 });
+            bookList.Add(new Book { ISBNNumber = 4, Title = "A Tale of Two Cities", Author = "Charles Darwin", Category = "Fiction", Price = 3000, Stock = 5 });
+            bookList.Add(new Book { ISBNNumber = 5, Title = "Devdas", Author = "Chetan Baghat", Category = "Fiction", Price = 1000, Stock = 7 });
+            bookList.Add(new Book { ISBNNumber = 6, Title = "Crime and Punishment", Author = "Sarat Chandra Chaterjee", Category = "Fiction", Price = 2000, Stock = 6 });
+            bookList.Add(new Book { ISBNNumber = 7, Title = "Faust", Author = "Goethe", Category = "Scientific", Price = 4000, Stock = 4 });
+            bookList.Add(new Book { ISBNNumber = 8, Title = "India", Author = "Chetan Baghat", Category = "Scientific", Price = 2000, Stock = 10 });
+            bookList.Add(new Book { ISBNNumber = 9, Title = "Paradise Lost", Author = "John Miton", Category = "Scientific", Price = 3000, Stock = 9 });
+            return bookList;
         }
+
         internal static void printDetails()
         {
             List<Book> details = getBookDetails();
             var result = from p in details
                          select p;
             Console.WriteLine("Using query :");
-            foreach(var res in result)
+            foreach (var res in result)
             {
                 Console.WriteLine("ISBNNumber :" + res.ISBNNumber + " ,Title :" + res.Title + " ,Author :" + res.Author + " ,Category :" + res.Category + " ,Price : " + res.Price + " , Stock : " + res.Stock);
             }
@@ -80,6 +50,7 @@ namespace LinqRev
                 Console.WriteLine("ISBNNumber :" + res.ISBNNumber + " ,Title :" + res.Title + " ,Author :" + res.Author + " ,Category :" + res.Category + " ,Price : " + res.Price + " , Stock : " + res.Stock);
             }
         }
+
         internal static void MaxPrice()
         {
             List<Book> details = getBookDetails();
@@ -92,6 +63,7 @@ namespace LinqRev
             var result1 = details.Max(p => p.Price);
             Console.WriteLine("book with max price :" + result1);
         }
+
         internal static void groupCategory()
         {
             List<Book> details = getBookDetails();
@@ -103,7 +75,7 @@ namespace LinqRev
                 Console.WriteLine("Category : " + res.Key);
                 foreach (var grp in res)
                 {
-                   
+
                     Console.WriteLine("title :" + grp.Title + " , Author :" + grp.Author);
                 }
                 Console.WriteLine();
@@ -114,16 +86,16 @@ namespace LinqRev
             Console.WriteLine();
             Console.WriteLine("Using method :");
             var result1 = details.GroupBy(p => p.Category);
-            foreach(var res in result1)
+            foreach (var res in result1)
             {
-                Console.WriteLine("Category :"+res.Key);
-                foreach(var grp in res)
+                Console.WriteLine("Category :" + res.Key);
+                foreach (var grp in res)
                 {
                     Console.WriteLine("title :" + grp.Title + " ,Author :" + grp.Author);
                 }
                 Console.WriteLine();
             }
-            
+
         }
         internal static void chetanBooks()
         {
@@ -154,11 +126,11 @@ namespace LinqRev
                          where p.Title.Contains("India")
                          select p;
             Console.WriteLine("Using query :");
-            foreach(var res in result)
+            foreach (var res in result)
             {
                 Console.WriteLine("book :" + res.Title + " ,Author : " + res.Author);
             }
-           
+
 
             Console.WriteLine("Using method :");
             var result1 = details.Where(p => p.Title.Contains("India"));
@@ -166,36 +138,38 @@ namespace LinqRev
             {
                 Console.WriteLine("book :" + res.Title + " ,Author : " + res.Author);
             }
+
+
         }
+
+
+
+    }
+
+    class Book
+    {
+        /**
+        public Book()
+        {
+
+        }
+
+        public Book (int ISBNNumber, string Title, string Author, string Category, int Price, int Stock)
+         {
+            this.ISBNNumber = ISBNNumber;
+            this.Title = Title;
+
+
+
+         }
+           **/ 
+
+        public int ISBNNumber { get; set; }
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string Category { get; set; }
+        public int Price { get; set; }
+        public int Stock { get; set; }
+
     }
 }
-
-C#
-SQL
-HTML,CSS,JS,AJAX,Bootstrap
-ADO .NET, LINQ
-
-Server side programming
-.NET framework
-
-Consolebased Application
-
-Webbased
-.NET
-
-ASP .NET
-IIS  - Internet Information Server
-.ASPX - Active Server Page Extended
-ASP .NET Web Application (.NET Framework)
-
-Web Forms
-
-
-
-
-
-
-
-
-
-
