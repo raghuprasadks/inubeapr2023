@@ -1,0 +1,28 @@
+LINQ Revision
+Weekly Test
+ASP .NET
+
+1. Create a Book class
+having following properties.
+int ISBNNumber
+string Title
+string Author
+string Category
+int Price
+int Stock
+
+category could be fiction,drama,scientific
+
+2. Create BookManagement class
+
+Create a List of 3 books for each category
+i,e create object of Book and add them to List
+3. Write following queries using query syntax and method syntax
+a. display all the books in the library
+i,e print all the properties
+b. Display the book having maximum price
+c. Group the books by category and print the
+title,author and price along with category
+d. Display all the books written by  Chetan Bhagat
+e. Display books containing title India
+

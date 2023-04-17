@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//https://www.completecsharptutorial.com/linqtutorial/learn-linq-using-ilist-programming-example.php
 namespace adonetwindows
 {
     class LINQTOOBJECTDemo
@@ -30,6 +30,7 @@ namespace adonetwindows
             Console.WriteLine("Query syntax");
             var result = from prod in prodctList
                          select prod;
+            Console.WriteLine("Data type " + result.GetType());
 
             foreach(ProductStore store in prodctList)
             {
