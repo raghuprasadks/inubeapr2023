@@ -33,7 +33,5 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-    }
-
-    
+    }    
 }
