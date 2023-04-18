@@ -1,0 +1,24 @@
+ASP .NET MVC
+
+ASP .NET
+Webforms
+
+Model View Controller (MVC)
+
+ASP. NET - View - Code behind
+
+Request - Controller
+populates data into a model - Connect to database
+Prepares response - View
+View -
+
+url: "{controller}/{action}/{id}",
+https://localhost:44364/Home/About
+
+controller - Home action - index
+cshtml
+action - About
+
+
+
+
