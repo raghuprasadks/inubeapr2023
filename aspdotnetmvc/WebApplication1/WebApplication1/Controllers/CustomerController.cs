@@ -10,6 +10,7 @@ namespace WebApplication1.Controllers
     public class CustomerController : Controller
     {
         // GET: Customer
+        static IList<Customer> customers = new List<Customer>();
         public ActionResult Index()
         {
 
@@ -21,13 +22,14 @@ namespace WebApplication1.Controllers
               customer1.Email = "ravi@gmail.com";
               customer1.Location = "Bengaluru";
               customers.Add(customer1);
-            **/
+            
 
             IList<Customer> customers = new List<Customer>() { 
                 new Customer{Id=1,Name="Ravi",Email="ravi@gmail.com",Location="Bengaluru" },
                  new Customer{Id=2,Name="Suresh",Email="suresh@gmail.com",Location="Mysuru" },
                  new Customer{Id=3,Name="Ganesh",Email="ganesh@gmail.com",Location="Shivamogga" }
             };
+            **/
             return View(customers);
         }
 
@@ -45,11 +47,13 @@ namespace WebApplication1.Controllers
 
         // POST: Customer/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        // public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Customer customer)
         {
             try
             {
                 // TODO: Add insert logic here
+                customers.Add(customer);
 
                 return RedirectToAction("Index");
             }
