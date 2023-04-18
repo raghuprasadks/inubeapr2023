@@ -36,7 +36,8 @@ namespace WebApplication1.Controllers
         // GET: Customer/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var customer = customers.Where(cust => cust.Id == id).ToList().First();
+            return View(customer);
         }
 
         // GET: Customer/Create

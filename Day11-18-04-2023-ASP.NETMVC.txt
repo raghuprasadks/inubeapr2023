@@ -18,7 +18,74 @@ https://localhost:44364/Home/About
 controller - Home action - index
 cshtml
 action - About
+@Html.ActionLink("Create New", "Create")
+<a href="/Customer/Create">Create New</a>
+
+<tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Location
+        </th>
+        <th></th>
+    </tr>
+
+<tr>
+        <td>
+            ravi
+        </td>
+        <td>
+            ravi@gmail.com
+        </td>
+        <td>
+            Bengaluru
+        </td>
+        <td>
+            <a href="/Customer/Edit/0">Edit</a> |
+            <a href="/Customer/Details/0">Details</a> |
+            <a href="/Customer/Delete/0">Delete</a>
+        </td>
+    </tr>
 
 
 
 
+<form action="/Customer/Create" method="post"><input name="__RequestVerificationToken" type="hidden" value="mDjo4WYqRZ-5xMPk8Kc4M49o6dD0IGpAaJaJ0ylvN5KTH43g1bvGV12gw2WG-hqfrbeaPVnUYqSRNdVKmQpCu0pCooU6jXYpwtv8NLcamZQ1">    <div class="form-horizontal">
+        <h4>Customer</h4>
+        <hr>
+        
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Name">Name</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" id="Name" name="Name" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Email">Email</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" id="Email" name="Email" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Location">Location</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" id="Location" name="Location" type="text" value="">
+                <span class="field-validation-valid text-danger" data-valmsg-for="Location" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default">
+            </div>
+        </div>
+    </div>
+</form>
