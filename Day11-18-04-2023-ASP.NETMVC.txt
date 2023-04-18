@@ -89,3 +89,5 @@ action - About
         </div>
     </div>
 </form>
+
+https://www.completecsharptutorial.com/asp-net-mvc5/insert-update-delete-using-models-without-ef-in-asp-net-mvc5.php
