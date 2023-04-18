@@ -67,16 +67,27 @@ namespace WebApplication1.Controllers
         // GET: Customer/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var customer = customers.Where(cust => cust.Id == id).ToList().First();
+
+            return View(customer);
         }
 
         // POST: Customer/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        //  public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, Customer updcustomer)
         {
             try
             {
                 // TODO: Add update logic here
+                /**
+                var customer = customers.Where(cust => cust.Id == id).ToList().First();
+                customer.Id = updcustomer.Id;
+                customer.Name = updcustomer.Name;
+                customer.Email = updcustomer.Email;
+                customer.Location = updcustomer.Location;
+               **/
+                customers= customers.Select(cust => cust.Id == id ? updcustomer : cust).ToList();
 
                 return RedirectToAction("Index");
             }
@@ -89,17 +100,23 @@ namespace WebApplication1.Controllers
         // GET: Customer/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var customer = customers.Where(cust => cust.Id == id).ToList().First();
+
+            return View(customer);
         }
 
         // POST: Customer/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        //   public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, Customer customer)
         {
             try
             {
                 // TODO: Add delete logic here
 
+                //   customers = customers.Where(cust => cust.Id != id).ToList();
+                var customertodel = customers.Where(cust => cust.Id == id).ToList().First();
+                customers.Remove(customertodel);
                 return RedirectToAction("Index");
             }
             catch
