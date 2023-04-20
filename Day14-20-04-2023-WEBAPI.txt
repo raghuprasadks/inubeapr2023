@@ -76,7 +76,11 @@ new HashSet<address>();
 public address {set,get}
 
 
+.net core
+dotnet --version
 
+employee - code (pk,identity),name,detp,desg,sal
+address - addressid(pk,identity),street,location,empcode -fk
 
 
 
