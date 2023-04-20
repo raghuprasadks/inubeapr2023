@@ -82,6 +82,10 @@ dotnet --version
 employee - code (pk,identity),name,detp,desg,sal
 address - addressid(pk,identity),street,location,empcode -fk
 
+web api .net core example
+
+https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio
+
 
 
 
