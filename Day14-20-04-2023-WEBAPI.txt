@@ -61,6 +61,7 @@ postman
 WEbAPI
 
 Dependency Injection
+constructor,property,method
 Inversion of control
 
 employee
