@@ -89,6 +89,8 @@ https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspne
 
 https://www.tutorialsteacher.com/core/net-core-command-line-interface
 
+https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-3.1
+
 
 
 
