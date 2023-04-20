@@ -1,0 +1,24 @@
+Entity  Framework
+
+ORM - Object Relational Mapping
+
+1. Database first approach - done
+2. Model first approach
+3. Code first approach - done
+
+Relationship - between the tables
+
+
+1. Develop entity framework model for 
+tables in w3schools
+
+ecommerce - try model first approach
+
+
+
+
+
+
+
+
+

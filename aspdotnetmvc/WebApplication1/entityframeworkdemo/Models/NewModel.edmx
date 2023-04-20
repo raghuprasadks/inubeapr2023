@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="inubeapr2023Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="address">
+          <Key>
+            <PropertyRef Name="addressid" />
+          </Key>
+          <Property Name="addressid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="address" Type="varchar" MaxLength="100" />
+          <Property Name="location" Type="varchar" MaxLength="100" />
+          <Property Name="pincode" Type="int" />
+        </EntityType>
+        <EntityType Name="employee">
+          <Key>
+            <PropertyRef Name="code" />
+          </Key>
+          <Property Name="code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="department" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="designation" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="salary" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="employeeaddressnew">
+          <Key>
+            <PropertyRef Name="empaddid" />
+          </Key>
+          <Property Name="empaddid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="empcode" Type="int" Nullable="false" />
+          <Property Name="addressid" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_employeeaddressnew_address">
+          <End Role="address" Type="Self.address" Multiplicity="1" />
+          <End Role="employeeaddressnew" Type="Self.employeeaddressnew" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="address">
+              <PropertyRef Name="addressid" />
+            </Principal>
+            <Dependent Role="employeeaddressnew">
+              <PropertyRef Name="addressid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_employeeaddressnew_employee">
+          <End Role="employee" Type="Self.employee" Multiplicity="1" />
+          <End Role="employeeaddressnew" Type="Self.employeeaddressnew" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="employee">
+              <PropertyRef Name="code" />
+            </Principal>
+            <Dependent Role="employeeaddressnew">
+              <PropertyRef Name="empcode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="inubeapr2023ModelStoreContainer">
+          <EntitySet Name="address" EntityType="Self.address" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="employeeaddressnew" EntityType="Self.employeeaddressnew" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_employeeaddressnew_address" Association="Self.FK_employeeaddressnew_address">
+            <End Role="address" EntitySet="address" />
+            <End Role="employeeaddressnew" EntitySet="employeeaddressnew" />
+          </AssociationSet>
+          <AssociationSet Name="FK_employeeaddressnew_employee" Association="Self.FK_employeeaddressnew_employee">
+            <End Role="employee" EntitySet="employee" />
+            <End Role="employeeaddressnew" EntitySet="employeeaddressnew" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="inubeapr2023Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="address">
+          <Key>
+            <PropertyRef Name="addressid" />
+          </Key>
+          <Property Name="addressid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="address1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="location" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="pincode" Type="Int32" />
+          <NavigationProperty Name="employeeaddressnews" Relationship="Self.FK_employeeaddressnew_address" FromRole="address" ToRole="employeeaddressnew" />
+        </EntityType>
+        <EntityType Name="employee">
+          <Key>
+            <PropertyRef Name="code" />
+          </Key>
+          <Property Name="code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="department" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="designation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="salary" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="employeeaddressnews" Relationship="Self.FK_employeeaddressnew_employee" FromRole="employee" ToRole="employeeaddressnew" />
+        </EntityType>
+        <EntityType Name="employeeaddressnew">
+          <Key>
+            <PropertyRef Name="empaddid" />
+          </Key>
+          <Property Name="empaddid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="empcode" Type="Int32" Nullable="false" />
+          <Property Name="addressid" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="address" Relationship="Self.FK_employeeaddressnew_address" FromRole="employeeaddressnew" ToRole="address" />
+          <NavigationProperty Name="employee" Relationship="Self.FK_employeeaddressnew_employee" FromRole="employeeaddressnew" ToRole="employee" />
+        </EntityType>
+        <Association Name="FK_employeeaddressnew_address">
+          <End Role="address" Type="Self.address" Multiplicity="1" />
+          <End Role="employeeaddressnew" Type="Self.employeeaddressnew" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="address">
+              <PropertyRef Name="addressid" />
+            </Principal>
+            <Dependent Role="employeeaddressnew">
+              <PropertyRef Name="addressid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_employeeaddressnew_employee">
+          <End Role="employee" Type="Self.employee" Multiplicity="1" />
+          <End Role="employeeaddressnew" Type="Self.employeeaddressnew" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="employee">
+              <PropertyRef Name="code" />
+            </Principal>
+            <Dependent Role="employeeaddressnew">
+              <PropertyRef Name="empcode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="inubeapr2023Entities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="addresses" EntityType="Self.address" />
+          <EntitySet Name="employees" EntityType="Self.employee" />
+          <EntitySet Name="employeeaddressnews" EntityType="Self.employeeaddressnew" />
+          <AssociationSet Name="FK_employeeaddressnew_address" Association="Self.FK_employeeaddressnew_address">
+            <End Role="address" EntitySet="addresses" />
+            <End Role="employeeaddressnew" EntitySet="employeeaddressnews" />
+          </AssociationSet>
+          <AssociationSet Name="FK_employeeaddressnew_employee" Association="Self.FK_employeeaddressnew_employee">
+            <End Role="employee" EntitySet="employees" />
+            <End Role="employeeaddressnew" EntitySet="employeeaddressnews" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="inubeapr2023ModelStoreContainer" CdmEntityContainer="inubeapr2023Entities2">
+          <EntitySetMapping Name="addresses">
+            <EntityTypeMapping TypeName="inubeapr2023Model.address">
+              <MappingFragment StoreEntitySet="address">
+                <ScalarProperty Name="addressid" ColumnName="addressid" />
+                <ScalarProperty Name="address1" ColumnName="address" />
+                <ScalarProperty Name="location" ColumnName="location" />
+                <ScalarProperty Name="pincode" ColumnName="pincode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="employees">
+            <EntityTypeMapping TypeName="inubeapr2023Model.employee">
+              <MappingFragment StoreEntitySet="employee">
+                <ScalarProperty Name="code" ColumnName="code" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="department" ColumnName="department" />
+                <ScalarProperty Name="designation" ColumnName="designation" />
+                <ScalarProperty Name="salary" ColumnName="salary" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="employeeaddressnews">
+            <EntityTypeMapping TypeName="inubeapr2023Model.employeeaddressnew">
+              <MappingFragment StoreEntitySet="employeeaddressnew">
+                <ScalarProperty Name="empaddid" ColumnName="empaddid" />
+                <ScalarProperty Name="empcode" ColumnName="empcode" />
+                <ScalarProperty Name="addressid" ColumnName="addressid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

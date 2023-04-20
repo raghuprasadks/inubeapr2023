@@ -1,0 +1,85 @@
+WEB API
+Application Programming Interface
+
+.NET MVC
+
+
+Website
+Web Application
+Mobile Application
+Android/ios - .NET
+
+Web Services 
+SOAP Based 
+RESTFUL Webservices
+Representational State Transfer
+JSON - Java Script Object Notation
+
+employee=
+{
+empid:1,
+name:"raghu",
+}
+
+employee=
+{
+"empid":1,
+"name":"raghu",
+}
+
+
+customer - view()
+XML
+JSON
+
+
+https://jsonplaceholder.typicode.com/todos - GET
+https://jsonplaceholder.typicode.com/todos/1
+
+
+{
+  "userId": 1,
+  "id": 1,
+  "title": "delectus aut autem",
+  "completed": false
+}
+
+
+
+}
+
+D:\kaushalya\consultancy\inube\2023
+
+https://localhost:44324/webapidemo/Values
+
+
+https://localhost:44324/api/Values - get all
+https://localhost:44324/api/Values/1
+
+postman
+
+WEbAPI
+
+Dependency Injection
+Inversion of control
+
+employee
+address
+Tight coupling
+
+public employee(Addree address)
+{
+new HashSet<address>();
+}
+
+public address {set,get}
+
+
+
+
+
+
+
+
+
+
