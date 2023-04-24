@@ -12,3 +12,39 @@ session/cookie managment
 
 https://www.c-sharpcorner.com/article/how-to-use-session-in-asp-net-core/
 https://www.c-sharpcorner.com/article/model-validation-in-asp-net-mvc-core-3-1/
+
+
+.net core mvc cowin
+
+1. Create a project
+
+web application mvc C#
+os - windows,linux
+
+2. Add dependencies
+
+3. Add the connection details
+in 
+appsettings.json
+
+4. Create User.cs in models
+
+add validations
+
+5.Create Context
+
+6. Program.cs
+7. DbInitializer
+8. changes in startup.cs
+9. Generate controller using the model user.cs
+10. link the controller in layout
+
+
+
+
+
+
+
+
+
+

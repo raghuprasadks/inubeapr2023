@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.33328.57
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cowin", "cowin\cowin.csproj", "{9BC295BB-66BB-4D4B-8823-89F70BA22EDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cowinnew", "..\cowinnew\cowinnew.csproj", "{8E56E1E5-A054-497A-ABCC-13879489626D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9BC295BB-66BB-4D4B-8823-89F70BA22EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BC295BB-66BB-4D4B-8823-89F70BA22EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BC295BB-66BB-4D4B-8823-89F70BA22EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E56E1E5-A054-497A-ABCC-13879489626D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E56E1E5-A054-497A-ABCC-13879489626D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E56E1E5-A054-497A-ABCC-13879489626D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E56E1E5-A054-497A-ABCC-13879489626D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
