@@ -1,0 +1,14 @@
+Assignment:
+
+HttpSession
+Cookie
+
+Sign Up
+Login
+Welcome <name>
+
+validation
+session/cookie managment
+
+https://www.c-sharpcorner.com/article/how-to-use-session-in-asp-net-core/
+https://www.c-sharpcorner.com/article/model-validation-in-asp-net-mvc-core-3-1/

@@ -1,1 +1,12 @@
 Conteso University project
+https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-3.1
+
+https://www.c-sharpcorner.com/article/creating-user-registration-form-in-asp-net-core-mvc-web-application/
+
+https://www.c-sharpcorner.com/article/user-registration-and-login-form-with-e-mail-notification-in-mvc/
+
+https://code-maze.com/implement-checkbox-list-aspnetcore/
+
+http://aspsolution.net/Code/5/5265/ASPNET-CORE-MVC-checkbox-model-binding/
+https://kaushikroychowdhury.com/blog/create-an-e-commerce-application-in-asp-net-core-mvc/
+
