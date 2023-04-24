@@ -12,7 +12,7 @@ namespace cowin.Models
         public long Mobile { get; set; }
         public string Email { get; set; }
         public string Sex { get; set; }
-        public bool Qualification { get; set; }
+        public string Qualification { get; set; }
       //  public bool Qualification_PG { get; set; }
     //    public bool Qualification_OTH { get; set; }
 
