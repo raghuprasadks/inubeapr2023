@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JS</title>
+</head>
+<body>
+
+    <h1>Advanced JS</h1>
+
+    <script>
+
+console.log('Advanced JS')
+console.log('arrow function')
+
+        function add(n1,n2){
+            return n1+n2
+        }
+
+        result = add(100,200)
+        console.log('result of addition is '+result)
+
+        console.log('nameless function')
+        const multiply = function(n1,n2){
+            return n1*n2
+        }
+        result =multiply(2,4)
+        console.log(result)
+
+        console.log('lambda function')
+
+        const lamdamultiply =(n1,n2)=>n1*n2
+        result = lamdamultiply(3,5)
+        console.log('lambda multiply '+result)
+        /**
+        const lamdamultiply =(n1,n2)=>n1/n2
+        result = lamdamultiply(3,5)
+        console.log('lambda multiply '+result)
+
+        const pi = 3.143
+        pi = 4.3444
+        console.log(pi)
+        **/
+        const si = (p,r,t)=>{
+            console.log('simple interest calculator')            
+            simpleinterest = p*r*t/100
+            return simpleinterest
+        }
+        result = si(1000,4,1)
+        console.log('si '+result)
+        
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>

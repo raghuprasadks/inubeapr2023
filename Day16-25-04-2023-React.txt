@@ -1,0 +1,54 @@
+React js - js library for
+front end application development
+component based architecture
+SPA - Single Page Application
+
+html,css,bootstrap,js,ajax
+
+.NET MVC
+
+React
+node js - serverside js runtime environment
+npm - node package manager
+npx - node package executer
+
+dotnet framework - nuget package manager
+pip -python
+create react folder
+cd react
+npx create-react-app reactbasics
+
+https://nodejs.org/en/download
+
+
+
+
+
+npx create-react-app reactbasics
+cd reactbasics
+npm start
+
+package.json
+
+index.html - public
+ <div id="root"></div>
+index.js
+App.js - functional component
+
+Header
+Content
+Footer
+
+create components folder inside src
+Employee.js
+emp={
+}
+
+
+map,filter,reduce
+foreach
+spread operator ...
+
+create advancedjs folder out side of 
+react
+
