@@ -10,9 +10,11 @@ function App() {
   return (
     <div>
       <h1>Welcome to React</h1>
+      {/**
       <Header></Header>
       <Employee></Employee>
       <Footer></Footer> 
+       */}
       <IPLPoints></IPLPoints> 
     </div>
   );
