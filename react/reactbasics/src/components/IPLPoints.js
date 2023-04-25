@@ -20,6 +20,7 @@ const IPLPoints=()=>{
     return(
 
         <div>
+            <h1>Total Number of teams : {ipltable.length}</h1>
             <table>
 
                 <tr>
