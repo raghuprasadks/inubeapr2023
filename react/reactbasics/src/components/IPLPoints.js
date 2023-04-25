@@ -17,11 +17,17 @@ const IPLPoints=()=>{
         }
     ]
 
+    var totalid = 0
+
+    ipltable.forEach((ipl)=>totalid=totalid+ipl.id)
+
+
     return(
 
         <div>
             <h1>Total Number of teams : {ipltable.length}</h1>
-            <table>
+        
+                    <table>
 
                 <tr>
                     <th>Id</th>

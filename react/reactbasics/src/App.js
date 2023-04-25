@@ -5,8 +5,30 @@ import Content from './Content';
 import Footer from './Footer';
 import Employee from './components/Employee';
 import IPLPoints from './components/IPLPoints';
+import Customer from './components/Customer';
 
 function App() {
+
+  const customers=[
+    {
+      id:1,
+      name:'raju',
+      location:'bengaluru'
+    },
+    {
+      id:2,
+      name:'gagana',
+      location:'mysuru'
+    },
+    {
+      id:3,
+      name:'reddy',
+      location:'hubli'
+    }
+
+
+  ]
+
   return (
     <div>
       <h1>Welcome to React</h1>
@@ -14,8 +36,11 @@ function App() {
       <Header></Header>
       <Employee></Employee>
       <Footer></Footer> 
-       */}
       <IPLPoints></IPLPoints> 
+      <img src='logo.jpg'>
+       */}
+       <Customer custlist={customers}></Customer>
+      
     </div>
   );
 }
