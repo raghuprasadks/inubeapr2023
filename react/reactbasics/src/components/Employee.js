@@ -9,12 +9,10 @@ const Employee = ()=>{
         sal:30000
     }
     return(
-
         <div>
             <h1>Employee</h1>
             <p>Code : {employee.code}</p>
             <p>Name : {employee.name}</p>
-
         </div>
     )
 }
