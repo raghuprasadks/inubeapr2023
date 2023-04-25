@@ -71,7 +71,7 @@
     employess.map((emp)=>console.log('emp name : '+emp.name))
 
     updemployees = employess.map((emp)=>emp.sal*2)
-    console.log('updemployees :: '+updemployees)
+    console.log('updemployees :: ',updemployees)
     console.log('original employees array '+employess[0].sal)
 
     console.log('filter')
@@ -85,6 +85,27 @@
     console.log(empabove150)
 
     empabove150.forEach((emp)=>console.log('emp with sal more than 150',emp.name))
+
+    console.log('const')
+       const expenditure = [1000,3000,200,400]
+       expenditure[0]=1500
+       expenditure.push(33333)
+       console.log(expenditure)
+       console.log('after re-assignment')
+       //expenditure=[300,400,500]
+       console.log(expenditure)
+
+       console.log('var score')
+       i=100
+
+       for(let i=0;i<10;i++){
+        console.log(i)
+       }
+
+       console.log('after loop ',i)       
+
+
+
 
 
 

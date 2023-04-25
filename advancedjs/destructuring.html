@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <h1>Destructuring</h1>
+
+
+    <script>
+
+        const vehicles = ['bicycle','auto','car','train','aeroplane','ship']
+        console.log('bicycle ',vehicles[0])
+
+      //  const [two,three,four]=vehicles
+       // console.log(three)
+
+        const [two,...rest]=vehicles
+
+        console.log(rest)
+        
+        employee={
+            code:1,
+            name:'suresh',
+            dept:'IT',
+            desg:'Programmer',
+            sal:38838
+        }
+
+        function displayEmployee(emp){
+            console.log(emp)
+        }
+
+        displayEmployee(employee)
+
+        console.log('destructuring')
+        function displayEmployeeName({name,sal}){
+            console.log("Name ",name,"salary ",sal)
+        }
+        displayEmployeeName(employee)
+
+
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
