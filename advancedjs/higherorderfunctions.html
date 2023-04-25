@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Functions</title>
+</head>
+<body>
+
+    <h1>Higher Order Functions</h1>
+    <script>
+        console.log('higher order functions')
+        console.log('map')
+        marks = [10,20,23,18,8]
+        console.log("before : "+marks)
+        for (i=0;i<marks.length;i++){
+            marks[i]=marks[i]+1
+        }
+
+        console.log("after : "+marks)
+
+        function grace(mark){
+            return mark+1
+
+        }
+        marksupd =marks.map(grace)
+        console.log('marks after grace '+marks)
+        console.log('updated marks after grace '+marksupd)
+
+
+        function gracewithtwoparam(value,index){
+            console.log('index '+index)
+            console.log('value '+value)
+            return value+1
+
+        }
+
+        markswithtwoparam = marks.map(gracewithtwoparam)
+
+    </script>
+</body>
+</html>
