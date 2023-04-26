@@ -10,6 +10,7 @@ import Users from './components/Users';
 import DemoForm from './components/DemoForm';
 import SimpleInterest from './components/SimpleInterest';
 import TodoApp from './components/TodoApp';
+import EmployeeMaster from './components/EmployeeMaster';
 
 function App() {
 
@@ -46,11 +47,13 @@ function App() {
       <Users></Users>
        <DemoForm/>
          <SimpleInterest/>
-       */}
+       <TodoApp/>
+      */}
        
      
 
-       <TodoApp/>
+      
+       <EmployeeMaster></EmployeeMaster>
       
     </div>
   );
