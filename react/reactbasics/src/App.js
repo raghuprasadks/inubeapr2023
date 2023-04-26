@@ -8,7 +8,7 @@ import IPLPoints from './components/IPLPoints';
 import Customer from './components/Customer';
 import Users from './components/Users';
 import DemoForm from './components/DemoForm';
-
+import SimpleInterest from './components/SimpleInterest';
 
 function App() {
 
@@ -43,9 +43,10 @@ function App() {
       <img src='logo.jpg'>
       <Customer custlist={customers}></Customer>
       <Users></Users>
-       */}
        <DemoForm/>
+       */}
        
+       <SimpleInterest/>
       
     </div>
   );
