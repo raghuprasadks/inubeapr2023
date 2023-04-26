@@ -19,13 +19,13 @@ const SimpleInterest=()=>{
 
     return(
 
-        <form>
+        <div>
             <input value={principal} onChange={(e)=>setPrincipal(e.target.value)} placeholder='Enter Principal Amount'></input>
             <input value={roi} onChange={(e)=>setRoi(e.target.value)} placeholder='Enter Rate Of Interest'></input>
             <input value={time} onChange={(e)=>setTime(e.target.value)} placeholder='Enter Time in years'></input>
             <button onClick={calculateSI}>Calculate</button>
             <h1>Simple Interest is {si}</h1>
-        </form>
+        </div>
     )
 }
 
