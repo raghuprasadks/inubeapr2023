@@ -4,11 +4,16 @@ import React, { useState } from "react";
 const TodoApp = () => {
     document.title = 'Simple Todo List Example';
   const [todoItem, setTodoItem] = useState("");
+/**
   const [todoList, setTodoList] = useState([
     { id: 1, text: "Learn about React" },
     { id: 2, text: "Meet friend for lunch" },
     { id: 3, text: "Build really cool todo app" }
   ]);
+
+   */
+
+  const [todoList, setTodoList] = useState([]);
 
   const generateId = () => {
      const highestId = Math.max.apply(Math, todoList.map(function (element) {
