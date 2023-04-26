@@ -9,6 +9,7 @@ import Customer from './components/Customer';
 import Users from './components/Users';
 import DemoForm from './components/DemoForm';
 import SimpleInterest from './components/SimpleInterest';
+import TodoApp from './components/TodoApp';
 
 function App() {
 
@@ -44,9 +45,12 @@ function App() {
       <Customer custlist={customers}></Customer>
       <Users></Users>
        <DemoForm/>
+         <SimpleInterest/>
        */}
        
-       <SimpleInterest/>
+     
+
+       <TodoApp/>
       
     </div>
   );
