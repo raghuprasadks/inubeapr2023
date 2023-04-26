@@ -6,6 +6,9 @@ import Footer from './Footer';
 import Employee from './components/Employee';
 import IPLPoints from './components/IPLPoints';
 import Customer from './components/Customer';
+import Users from './components/Users';
+import DemoForm from './components/DemoForm';
+
 
 function App() {
 
@@ -38,8 +41,11 @@ function App() {
       <Footer></Footer> 
       <IPLPoints></IPLPoints> 
       <img src='logo.jpg'>
+      <Customer custlist={customers}></Customer>
+      <Users></Users>
        */}
-       <Customer custlist={customers}></Customer>
+       <DemoForm/>
+       
       
     </div>
   );
