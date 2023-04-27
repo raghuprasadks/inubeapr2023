@@ -11,6 +11,7 @@ import DemoForm from './components/DemoForm';
 import SimpleInterest from './components/SimpleInterest';
 import TodoApp from './components/TodoApp';
 import EmployeeMaster from './components/EmployeeMaster';
+import { FetchApiDemo } from './components/FetchAPIDemo';
 
 function App() {
 
@@ -48,12 +49,13 @@ function App() {
        <DemoForm/>
          <SimpleInterest/>
        <TodoApp/>
+        <EmployeeMaster></EmployeeMaster>
       */}
        
-     
+     <FetchApiDemo></FetchApiDemo>
 
       
-       <EmployeeMaster></EmployeeMaster>
+      
       
     </div>
   );
