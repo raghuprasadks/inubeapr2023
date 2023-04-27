@@ -1,2 +1,33 @@
 React
 API Integration
+
+CRUD
+fetchapi - javascript and ajax
+axios
+useEffect - side
+useState
+
+todos
+
+
+
+get,post,put,delete
+
+webapi
+
+post request..
+data to be posted
+payload - data
+
+axios - 
+
+90 minutes
+
+1. type the code for FetchAPIDemo
+2. type the code for PostAPI
+3. type the code for CRUD operation
+of todos
+https://codesandbox.io/s/ey0w4
+
+Routing
+https://www.w3schools.com/REACT/react_router.asp
