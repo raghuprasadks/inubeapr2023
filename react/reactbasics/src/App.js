@@ -12,6 +12,7 @@ import SimpleInterest from './components/SimpleInterest';
 import TodoApp from './components/TodoApp';
 import EmployeeMaster from './components/EmployeeMaster';
 import { FetchApiDemo } from './components/FetchAPIDemo';
+import PostAPI from './components/PostAPI';
 
 function App() {
 
@@ -50,9 +51,12 @@ function App() {
          <SimpleInterest/>
        <TodoApp/>
         <EmployeeMaster></EmployeeMaster>
+         <FetchApiDemo></FetchApiDemo>
       */}
        
-     <FetchApiDemo></FetchApiDemo>
+    
+
+     <PostAPI></PostAPI>
 
       
       
