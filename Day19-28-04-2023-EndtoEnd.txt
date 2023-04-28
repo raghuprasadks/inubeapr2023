@@ -7,6 +7,14 @@ Functional Components
 Class based components
 Integration of React with WebAPI
 
+1. Create SimpleCounter class
+component
+
+2. Embed Increment button
+3. Embed Decrement button
+Label 
+
+
 
 
 
