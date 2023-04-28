@@ -1,0 +1,14 @@
+https://www.c-sharpcorner.com/article/reactjs-crud-using-net-core-web-api/
+
+https://www.c-sharpcorner.com/article/net-core-3-1-web-api-crud/
+
+React
+Functional Components
+Class based components
+Integration of React with WebAPI
+
+
+
+
+
+

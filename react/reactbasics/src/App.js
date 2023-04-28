@@ -13,6 +13,7 @@ import TodoApp from './components/TodoApp';
 import EmployeeMaster from './components/EmployeeMaster';
 import { FetchApiDemo } from './components/FetchAPIDemo';
 import PostAPI from './components/PostAPI';
+import Car from './components/Car';
 
 function App() {
 
@@ -52,11 +53,13 @@ function App() {
        <TodoApp/>
         <EmployeeMaster></EmployeeMaster>
          <FetchApiDemo></FetchApiDemo>
+         <PostAPI></PostAPI>
       */}
+      <Car/>
        
     
 
-     <PostAPI></PostAPI>
+     
 
       
       
