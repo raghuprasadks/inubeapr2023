@@ -28,10 +28,16 @@ supplier - varchar(100)
 price - 
 db first approach
 
+https://www.tutorialsteacher.com/webapi/consuming-web-api-in-dotnet-using-httpclient
 1. NugetPackage manager
 Install
 Microsoft.AspNet.WebApi.Cors
-2.
+2. Create ProductMVC project
+
+
+
+
+
 
 
 
