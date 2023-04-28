@@ -14,6 +14,7 @@ import EmployeeMaster from './components/EmployeeMaster';
 import { FetchApiDemo } from './components/FetchAPIDemo';
 import PostAPI from './components/PostAPI';
 import Car from './components/Car';
+import SimpleCounter from './components/SimpleCounter';
 
 function App() {
 
@@ -54,8 +55,10 @@ function App() {
         <EmployeeMaster></EmployeeMaster>
          <FetchApiDemo></FetchApiDemo>
          <PostAPI></PostAPI>
+         <Car/>
       */}
-      <Car/>
+      
+      <SimpleCounter/>
        
     
 

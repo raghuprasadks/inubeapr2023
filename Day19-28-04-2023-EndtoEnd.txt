@@ -14,6 +14,36 @@ component
 3. Embed Decrement button
 Label 
 
+https://www.pragimtech.com/blog/reactjs/reactjs-introduction/
+
+WebAPI Integration
+
+1. Web API project using asp.net web api
+
+product table
+id - int
+name - varchar(100)
+desc - varchar(100)
+supplier - varchar(100)
+price - 
+db first approach
+
+1. NugetPackage manager
+Install
+Microsoft.AspNet.WebApi.Cors
+2.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
