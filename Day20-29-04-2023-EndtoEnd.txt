@@ -33,6 +33,39 @@ create
 2. DepartmentController
 
 hocfrontend - react project
+state management
+
+useState() - functional
+state ,setState -class based component
+property and context for 
+passing data from parent to child
+redux
+
+single source of truth
+react - redux for state management
+
+
+Summary
+
+1. C#
+2. SQL
+3. HTML/CSS/Java Script/AJAX
+4. ASP .NET
+5. Different kinds of projects
+console,web
+mvc - Razor,session,api
+core
+6. ADO .NET
+7. Entity Framework
+database first
+model first
+code first
+mapping between the entities
+8. Advanced java script
+9. React
+10. Integration of React with Webapi
+
+
 
 
 
