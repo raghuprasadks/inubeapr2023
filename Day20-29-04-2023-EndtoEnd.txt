@@ -1,0 +1,15 @@
+Agenda:
+1. Integration of Web API with MVC
+ProductWebApi
+product
+
+ProductMVC
+
+get method
+https://www.tutorialsteacher.com/webapi/consume-web-api-for-crud-operation
+
+usecontext
+https://www.w3schools.com/REACT/react_usecontext.asp
+
+fragment
+<> </>

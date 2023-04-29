@@ -34,7 +34,7 @@ Install
 Microsoft.AspNet.WebApi.Cors
 2. Create ProductMVC project
 
-
+(localdb)\MSSQLLocalDB
 
 
 
