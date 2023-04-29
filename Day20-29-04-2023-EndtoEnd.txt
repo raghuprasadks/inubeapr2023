@@ -13,3 +13,28 @@ https://www.w3schools.com/REACT/react_usecontext.asp
 
 fragment
 <> </>
+https://www.pragimtech.com/blog/reactjs/higher-order-components-in-react/
+Employee table
+Id - int pk,identity
+Name - varchar(50)
+Location - varchar(50)
+Salary - int
+
+Department table
+Id - int pk,identity
+Name - varchar(50)
+Revenue - int
+
+create new webapi project 
+hocapi
+
+create 
+1.EmployeeController
+2. DepartmentController
+
+hocfrontend - react project
+
+
+
+
+
